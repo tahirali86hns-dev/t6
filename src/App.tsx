@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './sections/Navigation';
 import Footer from './sections/Footer';
 import ChatWidget from './components/ChatWidget';
@@ -17,7 +17,7 @@ import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/t6">
+    <HashRouter>
       <div className="min-h-screen bg-cybotics-black text-white overflow-x-hidden">
         <Navigation />
         <main>
@@ -37,7 +37,7 @@ function App() {
         {/* Chat widget persists across all pages */}
         <ChatWidget />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
