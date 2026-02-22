@@ -69,7 +69,7 @@ const About = () => {
                   }`}
               >
                 <img
-                  src="/images/about-1.jpg"
+                  src={`${import.meta.env.BASE_URL}images/about-1.jpg`}
                   alt="Factory Worker"
                   className="w-full h-64 lg:h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -82,7 +82,7 @@ const About = () => {
                   }`}
               >
                 <img
-                  src="/images/about-2.jpg"
+                  src={`${import.meta.env.BASE_URL}images/about-2.jpg`}
                   alt="Robotic Arm"
                   className="w-full h-48 lg:h-64 object-cover hover:scale-105 transition-transform duration-700"
                 />

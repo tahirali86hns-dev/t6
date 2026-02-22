@@ -40,7 +40,7 @@ const Testimonials = () => {
       author: 'John Davidson',
       role: 'Plant Manager',
       company: 'AutoTech Manufacturing',
-      avatar: '/images/avatar-1.jpg',
+      avatar: `${import.meta.env.BASE_URL}images/avatar-1.jpg`,
       rating: 5,
     },
     {
@@ -48,7 +48,7 @@ const Testimonials = () => {
       author: 'Sarah Mitchell',
       role: 'Operations Director',
       company: 'Precision Industries',
-      avatar: '/images/avatar-2.jpg',
+      avatar: `${import.meta.env.BASE_URL}images/avatar-2.jpg`,
       rating: 5,
     },
     {
@@ -56,7 +56,7 @@ const Testimonials = () => {
       author: 'Michael Roberts',
       role: 'Engineering Manager',
       company: 'SteelForge Corp',
-      avatar: '/images/avatar-3.jpg',
+      avatar: `${import.meta.env.BASE_URL}images/avatar-3.jpg`,
       rating: 5,
     },
   ];
@@ -183,8 +183,8 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${activeIndex === index
-                    ? 'bg-primary w-8'
-                    : 'bg-white/20 w-2 hover:bg-white/40'
+                  ? 'bg-primary w-8'
+                  : 'bg-white/20 w-2 hover:bg-white/40'
                   }`}
               />
             ))}
@@ -197,8 +197,8 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 ${activeIndex === index
-                    ? 'glass border-primary/30'
-                    : 'opacity-50 hover:opacity-75'
+                  ? 'glass border-primary/30'
+                  : 'opacity-50 hover:opacity-75'
                   }`}
               >
                 <img

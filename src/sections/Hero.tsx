@@ -61,7 +61,7 @@ const Hero = () => {
             onError={() => setVideoError(true)}
             className={`w-full h-full object-cover transition-all duration-[1.8s] ease-out ${isVisible ? 'scale-100' : 'scale-110'
               }`}
-            poster="/images/hero-bg.jpg"
+            poster={`${import.meta.env.BASE_URL}images/hero-bg.jpg`}
           >
             {/* Industrial/factory free-use video from Pexels */}
             <source
@@ -76,7 +76,7 @@ const Hero = () => {
         ) : (
           /* Fallback static image */
           <img
-            src="/images/hero-bg.jpg"
+            src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`}
             alt="Industrial Automation"
             className={`w-full h-full object-cover transition-all duration-[1.8s] ease-out ${isVisible ? 'scale-100 blur-0' : 'scale-110 blur-sm'
               }`}

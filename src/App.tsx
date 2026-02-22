@@ -17,7 +17,7 @@ import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/t6">
       <div className="min-h-screen bg-cybotics-black text-white overflow-x-hidden">
         <Navigation />
         <main>
